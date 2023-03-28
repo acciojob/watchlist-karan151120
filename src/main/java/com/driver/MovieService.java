@@ -32,16 +32,16 @@ public class MovieService {
         return movieRepository.getDirectorByName(name);
     }
 
-    public List<Movie> getMoviesByDirectorName(String name) {
-        return movieRepository.getMoviesByDirectorName(name);
+    public List<String> getMoviesByDirectorName(String director) {
+        return movieRepository.getMoviesByDirectorName(director);
     }
 
-    public List<Movie> findAllMovies() {
-        return movieRepository.findAllMovies();
+    public List<String> getAllMovies() {
+        return movieRepository.getAllMovies();
     }
 
-    public void deleteDirectorByName(String name) {
-        movieRepository.deleteDirectorByName(name);
+    public void deleteDirectorByName(String director) {
+        movieRepository.deleteDirectorByName(director);
     }
 
     public void deleteAllDirectors() {
