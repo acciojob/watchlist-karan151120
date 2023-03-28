@@ -51,7 +51,7 @@ public class MovieController {
     }
 
     @GetMapping("/get-all-movies")
-    public ResponseEntity<List<String>> getAllMovies(){
+    public ResponseEntity<List<String>> findAllMovies(){
         List<String> movies = null; // Assign list of student by calling service layer method
         movies = movieService.getAllMovies();
         return new ResponseEntity<>(movies, HttpStatus.CREATED);
